@@ -16,13 +16,13 @@ Consolidated and deduplicated from popular community lists, then checked with
 
 Current state (checked 2026-09-02):
 
-- **6 live** — reachable and returning 2xx/3xx
-- **0 bot-blocked** — site is up but blocks automated checks (403/429)
-- **0 dead or unreachable** — 404, 5xx, DNS/TLS errors, or timeout
+- **6 live**: reachable and returning 2xx/3xx
+- **0 bot-blocked**: site is up but blocks automated checks (403/429)
+- **0 dead or unreachable**: 404, 5xx, DNS/TLS errors, or timeout
 
 ## Browse it
 
-**[Read the full directory in GUIDE.md](GUIDE.md)** — every entry grouped by
+**[Read the full directory in GUIDE.md](GUIDE.md)**: every entry grouped by
 status and category, with facets.
 
 A searchable site is generated from the data by `scripts/build.py` and
@@ -33,22 +33,23 @@ once, then browse at the repo's Pages URL.
 
 Entries carry open-ended `tags`. Currently tagged:
 
-- **4-day-week** — sites focused on four-day work weeks
-- **employee-owned / cooperative** — sites for employee-owned or cooperative employers
+- **employee-owned**: sites for employee-owned employers
+- **cooperative**: cooperative and worker-owned employers
+- **github-list**: community-maintained co-op employer lists, not job boards
 
 ## Use the data
 
-- `data/entries/*.yaml` — one file per site, validated against
+- `data/entries/*.yaml`: one file per site, validated against
   `schema/entry.schema.json`
-- `site/data.json` + `site/data.csv` — machine-readable exports (generated)
+- `site/data.json` + `site/data.csv`: machine-readable exports (generated)
 
 ## How it's maintained
 
-- **Weekly link check** — `.github/workflows/linkcheck.yml` runs lychee over
+- **Weekly link check**: `.github/workflows/linkcheck.yml` runs lychee over
   all live URLs every Monday NZ time and opens a tracking issue for dead links
-- **CI on every push** — `.github/workflows/ci.yml` validates the data and
+- **CI on every push**: `.github/workflows/ci.yml` validates the data and
   rebuilds the site
-- **Local checks** — `python3 scripts/validate.py`, `python3 scripts/build.py`,
+- **Local checks**: `python3 scripts/validate.py`, `python3 scripts/build.py`,
   `python3 scripts/check.py`
 
 ## Contribute
@@ -57,7 +58,7 @@ See [CONTRIBUTING.md](CONTRIBUTING.md). Adding a site is one small YAML file.
 
 ## Related
 
-- [remote-job-sites](https://github.com/olitreadwell/remote-job-sites) — general remote job search sites
-- [tech-for-good-job-sites](https://github.com/olitreadwell/tech-for-good-job-sites) — mission-driven job sites
-- [4-day-week-job-sites](https://github.com/olitreadwell/4-day-week-job-sites) — four-day work week job sites
-- [new-zealand-data](https://github.com/olitreadwell/new-zealand-data) — NZ data & APIs directory
+- [remote-job-sites](https://github.com/olitreadwell/remote-job-sites): general remote job search sites
+- [tech-for-good-job-sites](https://github.com/olitreadwell/tech-for-good-job-sites): mission-driven job sites
+- [4-day-week-job-sites](https://github.com/olitreadwell/4-day-week-job-sites): four-day work week job sites
+- [new-zealand-data](https://github.com/olitreadwell/new-zealand-data): NZ data & APIs directory
